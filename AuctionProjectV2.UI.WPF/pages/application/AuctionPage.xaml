@@ -1,0 +1,129 @@
+﻿<Page x:Class="AuctionProjectV2.UI.WPF.pages.application.AuctionPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AuctionProjectV2.UI.WPF.pages.application"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="800"
+      Title="AuctionPage">
+
+    <Grid Background="LightBlue">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Grid.ColumnSpan="3"
+               Grid.Column="0"
+               FontSize="26" HorizontalAlignment="Center">I N F O</Label>
+
+        <Label Grid.Row="1" Grid.Column="0" 
+               FontSize="18" HorizontalAlignment="Right"
+               VerticalAlignment="Center" Height="34" Margin="10">Category:</Label>
+        <TextBlock Grid.Row="1" Grid.Column="1"
+                 FontSize="18" Margin="10" Height="34"
+                 Width="300" HorizontalAlignment="Left"
+                 x:Name="tbxCategory" ></TextBlock>
+
+        <Label Grid.Row="2" Grid.Column="0" 
+               FontSize="18" HorizontalAlignment="Right"
+               VerticalAlignment="Center" Height="34" Margin="10">Description:</Label>
+        <TextBlock Grid.Row="2" Grid.Column="1"
+                 FontSize="18" Margin="10" Height="34"
+                 Width="300" HorizontalAlignment="Left"
+                 x:Name="tbxDescription"></TextBlock>
+
+        <TextBlock Grid.Row="3" Grid.Column="0" FontSize="18" 
+                       HorizontalAlignment="Right"  VerticalAlignment="Center" 
+                       Margin="10"
+                       Text="Delivery Address:"></TextBlock>
+        <TextBlock Grid.Row="3" Grid.Column="1"
+                 FontSize="18" Margin="10"
+                 Width="300" HorizontalAlignment="Left"
+                 x:Name="tbxAddress"></TextBlock>
+
+        <Label Grid.Row="4" Grid.Column="0" 
+               FontSize="18" HorizontalAlignment="Right"
+               VerticalAlignment="Center" Height="34" Margin="10">Free On Board:</Label>
+        <TextBlock Grid.Row="4" Grid.Column="1"
+                 FontSize="18" Margin="10"
+                 Width="300" HorizontalAlignment="Left"
+                 x:Name="tbxFoB"></TextBlock>
+
+        <Label Grid.Row="5" Grid.Column="0" 
+               FontSize="18" HorizontalAlignment="Right"
+               VerticalAlignment="Center" Height="34" Margin="10">Start Price:</Label>
+        <TextBlock Grid.Row="5" Grid.Column="1"
+                 FontSize="18" Margin="10"
+                 Width="300" HorizontalAlignment="Left"
+                 x:Name="tbxStartPrice"></TextBlock>
+
+        <Label Grid.Row="6" Grid.Column="0" 
+               FontSize="18" HorizontalAlignment="Right"
+               VerticalAlignment="Center" Height="34" Margin="10">Step Of Auction:</Label>
+        <TextBlock Grid.Row="6" Grid.Column="1"
+                 FontSize="18" Margin="10"
+                 Width="300" HorizontalAlignment="Left"
+                 x:Name="tbxStepOfAuction"></TextBlock>
+
+        <Label Grid.Row="7" Grid.Column="0" 
+               FontSize="18" HorizontalAlignment="Right"
+               VerticalAlignment="Center" Height="34" Margin="10">Start Date:</Label>
+        <TextBlock Grid.Row="7" Grid.Column="1"
+                 FontSize="18" Margin="10" x:Name="tbxStartDate"
+                 Width="300" HorizontalAlignment="Left"></TextBlock>
+
+        <Label Grid.Row="8" Grid.Column="0" 
+               FontSize="18" HorizontalAlignment="Right"
+               VerticalAlignment="Center" Height="34" Margin="10">Final Date:</Label>
+        <TextBlock Grid.Row="8" Grid.Column="1"
+                 FontSize="18" Margin="10" x:Name="tbxFinalDate"
+                 Width="300" HorizontalAlignment="Left"></TextBlock>
+
+        <Label Grid.Row="9" Grid.Column="0" 
+               FontSize="18" HorizontalAlignment="Right"
+               VerticalAlignment="Center" Height="34" Margin="10">Status:</Label>
+        <TextBlock Grid.Row="9" Grid.Column="1"
+                 FontSize="18" Margin="10" x:Name="tbxStatus"
+                 Width="300" HorizontalAlignment="Left"></TextBlock>
+
+
+        <Label Grid.Row="1" Grid.Column="1" 
+               FontSize="18" HorizontalAlignment="Right"
+               VerticalAlignment="Center" Height="34" Margin="10">Lowest Rate Price Now:</Label>
+        <TextBlock Grid.Row="1" Grid.Column="2"
+                 FontSize="18" Margin="10" x:Name="tbxRatePrice"
+                 Width="300" HorizontalAlignment="Left"></TextBlock>
+
+        <Label Grid.Row="2" Grid.Column="1" 
+               FontSize="18" HorizontalAlignment="Right"
+               VerticalAlignment="Center" Height="34" Margin="10">Rating:</Label>
+        <TextBlock Grid.Row="2" Grid.Column="2"
+                 FontSize="18" Margin="10" x:Name="tbxRating"
+                 Width="300" HorizontalAlignment="Left"></TextBlock>
+
+        <Button Grid.Row="10" Grid.Column="2"
+                Width="150" FontSize="18"
+                HorizontalAlignment="Right"
+                Margin="10"
+                x:Name="btnSendRate"
+                Click="BtnSendRate_Click">Make Rate</Button>
+
+    </Grid>
+</Page>

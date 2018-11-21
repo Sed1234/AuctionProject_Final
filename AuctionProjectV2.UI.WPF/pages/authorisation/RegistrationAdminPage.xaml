@@ -1,0 +1,70 @@
+﻿<Page x:Class="AuctionProjectV2.UI.WPF.pages.authorisation.RegistrationAdminPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AuctionProjectV2.UI.WPF.pages.authorisation"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="RegistrationAdminPage">
+
+    <Grid Background="SkyBlue">
+        <!--<Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>-->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="61"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+               FontSize="24" HorizontalAlignment="Center" Margin="279,0" Width="242">R E G I S T R A T I O N</Label>
+
+        <Grid Grid.Row="1" HorizontalAlignment="Center" Margin="201,0,301,0" Width="298">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0"
+                   HorizontalAlignment="Right" VerticalAlignment="Center"
+                   FontSize="18">Login</Label>
+
+            <TextBox Grid.Row="0" Grid.Column="1" Margin="10"
+                      FontSize="18"
+                     x:Name="tbxLogin"></TextBox>
+
+            <Label Grid.Row="1" Grid.Column="0"
+                   HorizontalAlignment="Right" VerticalAlignment="Center"
+                   FontSize="18">Password</Label>
+
+            <PasswordBox Grid.Row="1" Grid.Column="1" Margin="10"
+                          FontSize="18"
+                          x:Name="tbxPassword"
+                          ></PasswordBox>
+
+            <Label Grid.Row="2" Grid.Column="0"
+                   HorizontalAlignment="Right" VerticalAlignment="Center"
+                   FontSize="18">Password again</Label>
+
+            <PasswordBox Grid.Row="2" Grid.Column="1" Margin="10"
+                         FontSize="18"
+                         x:Name="tbxPaswordTwo"></PasswordBox>
+
+            <Button Grid.Row="3" Grid.Column="1" Margin="10" 
+                    HorizontalAlignment="Right" Width="100"
+                    FontSize="16"
+                    x:Name="btnSaveAdminToDb"
+                    Click="btnSaveAdminToDb_Click">OK</Button>
+
+        </Grid>
+
+    </Grid>
+</Page>
